@@ -41,6 +41,7 @@ gallery.addEventListener('click', e => {
 
     gallery.addEventListener('keydown', e => {
         if (e.key === 'Escape') {
+            document.removeEventListener('keydown', closeLargeImageOnKeyboard);
             instance.close()
         }
     })
